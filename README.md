@@ -1,54 +1,69 @@
-# Inverse Design of Materials by Multi-objective optimization
+# IM2ODE4mattersim
 
-IM2ODE, a code package for inverse designing of materials
+Inverse Design of Materials by Multi-objective Optimization with MatterSim ML force field.
 
-**Official Website**: https://yueyuzhang.github.io/im2ode.github.io/
+## Overview
 
-## Required software
+This is a modified version of IM2ODE that integrates MatterSim, a graph neural network
+force field for fast and accurate materials simulations.
 
-* GNU make
-* Fortran compiler
-* Python 3.8+ (for MatterSim)
-* MatterSim (ML force field, optional)
+## Requirements
 
-## Quick compilation
+- GNU make
+- Fortran compiler
+- Python 3.8+
+- MatterSim (ML force field)
+- ASE (Atomic Simulation Environment)
 
-```
-git clone https://github.com/YueyuZhang/IM2ODE.git
-cd IM2ODE
-make > make.log
-```
+## Installation
 
-## MatterSim Integration (NEW)
+`ash
+git clone https://github.com/YueyuZhang/IM2ODE4mattersim.git
+cd IM2ODE4mattersim
+make
+`
 
-MatterSim is a machine learning force field for fast energy calculations.
+## Quick Start
 
-### Installation
+`ash
+# Run TiO2 structure search example
+cd examples/TiO2_12atoms
+bash run.sh
+`
 
-```bash
-conda activate simulation
-python -c "import mattersim; print('Version:', mattersim.__version__)"
-```
+## Available Examples
 
-### Usage
+All examples use MatterSim ML force field:
 
-```python
-from ase import Atoms
-from mattersim.forcefield import MatterSimCalculator
+| Example | System | Atoms | Type |
+|---------|--------|-------|------|
+| **TiO2_12atoms** | Bulk TiO2 | 12 | 3D periodic |
+| **Au20_cluster** | Gold nanocluster | 20 | 0D cluster |
+| **FeSe_2D** | FeSe monolayer | 8 | 2D material |
 
-atoms = Atoms('Si2', positions=[[0,0,0], [0.25,0.25,0.25]], cell=[5.43,5.43,5.43], pbc=True)
-calc = MatterSimCalculator(checkpoint="mattersim-v1.0.0-1M.pth", device="cpu")
-atoms.calc = calc
-print("Energy:", atoms.get_potential_energy())
-```
+## Integration Details
 
-## Energy Calculators
+The MatterSim integration works as follows:
 
-| Method | Accuracy | Speed | License |
-|--------|----------|-------|---------|
-| VASP | High (DFT) | Slow | Commercial |
-| LAMMPS | Medium | Fast | Open |
-| MatterSim | High (ML) | Fast | Open |
+1. Fortran code writes structure to POSCAR format
+2. 
+un_mattersim.py reads structure and runs MatterSim
+3. Energy and forces are written back
+4. Fortran code continues optimization
+
+## Files Modified/Added
+
+- 
+un_mattersim.F90 - Fortran interface
+- 
+un_mattersim.py - Python MatterSim calculator
+- Makefile - Updated compilation
+- Multiple example configurations
+
+## Citation
+
+Original IM2ODE paper:
+- Zhang YY et al. Comp. Mater. Sci. 98, 51-55 (2015)
 
 ## License
 
