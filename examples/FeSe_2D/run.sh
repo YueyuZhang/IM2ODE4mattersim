@@ -1,0 +1,3 @@
+#!/bin/bash
+# Run FeSe 2D monolayer search
+echo Starting FeSe 2D search...
