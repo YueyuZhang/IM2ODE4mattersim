@@ -1,0 +1,20 @@
+# Structure definition for TiO2 (12 atoms)
+# --------------------------------------------------
+# Number of atom types
+2
+# Atom types: Ti O
+Ti O
+# Number of atoms for each type
+4 8
+# Total number of atoms
+12
+# Minimal distances (in bohr, not used
+3.0
+# Lattice type: 0=cubic, 1=tetragonal, 2=orthorhombic, 3=hexagonal
+1
+# Volume range (bohr^3 (approx 150-250 A^3)
+1000 1800
+# Fix atom type: 0=not fix, 1=fix
+0 0
+# Fix lattice: 0=not fix, 1=fix
+0
