@@ -1,0 +1,20 @@
+# DE algorithm parameters for FeSe 2D monolayer
+# --------------------------------------------------
+# Population size
+40
+# Number of generations
+60
+# Crossover probability
+0.7
+# Mutation probability
+0.15
+# Selection pressure
+2.0
+# Energy calculator: 2=MatterSim ML force field
+2
+# Interval for output
+10
+# Random seed
+0
+# 2D calculation flag
+1
