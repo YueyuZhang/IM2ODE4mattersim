@@ -19,27 +19,21 @@ force field for fast and accurate materials simulations.
 
 ### 1. Install MatterSim
 
-`ash
 conda activate simulation
 pip install mattersim
-`
 
 ### 2. Compile IM2ODE4mattersim
 
-`ash
 git clone https://github.com/YueyuZhang/IM2ODE4mattersim.git
 cd IM2ODE4mattersim
 make
-`
 
 ## Quick Start
 
-`ash
 conda activate simulation
 cd examples/TiO2_12atoms
 cp ../../de.x .
 ./de.x
-`
 
 ## Examples
 
