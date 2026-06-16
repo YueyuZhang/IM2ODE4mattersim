@@ -1,6 +1,6 @@
 # Au20 Cluster Global Optimization
 
-Global structure search for 20-atom gold cluster using Gupta potential (model shell).
+Global structure search for 20-atom gold cluster using MatterSim ML force field.
 
 ## Background
 
@@ -13,7 +13,7 @@ is a well-known global minimum with tetrahedral geometry.
 - **Box size**: 20 x 20 x 20 Angstrom (vacuum for cluster)
 - **Population size**: 50 structures
 - **Generations**: 100
-- **Energy model**: Gupta potential (embedded atom method)
+- **Energy model**: MatterSim ML force field (GNN)
 
 ## Usage
 
@@ -28,6 +28,13 @@ bash run.sh
 - Various icosahedral structures
 - Amorphous/liquid-like clusters at higher energies
 
+## Calculator
+
+This example uses MatterSim, a graph neural network potential trained on
+density functional theory data. For metallic systems like gold clusters,
+MatterSim provides accurate energies and forces at a fraction of DFT cost.
+
 ## References
 
-- Phys. Rev. B 70, 235419 (2004) - Au20 pyramid
+- Phys. Rev. B 70, 235419 (2004) - Au20 pyramid structure
+- MatterSim: Graph neural network for materials simulations
