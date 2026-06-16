@@ -1,0 +1,21 @@
+# Structure definition for FeSe 2D monolayer
+# --------------------------------------------------
+# Number of atom types
+2
+# Atom types: Fe Se
+Fe Se
+# Number of atoms for each type
+4 4
+# Total number of atoms
+8
+# Minimal distances (bohr)
+4.0
+# Lattice type: 2=orthorhombic (good for 2D)
+2
+# Volume range (bohr^3 approx 800 A^3 with vacuum)
+4000 6000
+# Fix atom type: 0=not fix
+0 0
+# Fix lattice c-axis (vacuum direction)
+0
+# 2D flag: constrain z-coordinates for 2D
