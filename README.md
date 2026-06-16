@@ -10,12 +10,21 @@ force field for fast and accurate materials simulations.
 ## Requirements
 
 - GNU make
-- Fortran compiler
-- Python 3.8 or newer
+- Fortran compiler (gfortran)
+- Python 3.8+
 - MatterSim (ML force field)
 - ASE (Atomic Simulation Environment)
 
 ## Installation
+
+### 1. Install MatterSim
+
+`ash
+conda activate simulation
+pip install mattersim
+`
+
+### 2. Compile IM2ODE
 
 `ash
 git clone https://github.com/YueyuZhang/IM2ODE4mattersim.git
@@ -26,44 +35,33 @@ make
 ## Quick Start
 
 `ash
-# Run TiO2 structure search example
+conda activate simulation
 cd examples/TiO2_12atoms
-bash run.sh
+cp ../../de.x .
+./de.x
 `
 
-## Available Examples
-
-All examples use MatterSim ML force field:
+## Examples
 
 | Example | System | Atoms | Type |
 |---------|--------|-------|------|
 | TiO2_12atoms | Bulk TiO2 | 12 | 3D periodic |
-| Au20_cluster | Gold nanocluster | 20 | 0D cluster |
+| Au20_cluster | Gold cluster | 20 | 0D cluster |
 | FeSe_2D | FeSe monolayer | 8 | 2D material |
-
-## Integration Details
-
-The MatterSim integration works as follows:
-
-1. Fortran code writes structure to POSCAR format
-2. run_mattersim.py reads structure and runs MatterSim
-3. Energy and forces are written back
-4. Fortran code continues optimization
 
 ## Files Modified/Added
 
-- 
-un_mattersim.F90 - Fortran interface
-- 
-un_mattersim.py - Python MatterSim calculator
+### MatterSim integration:
+- run_mattersim.F90 - Fortran interface
+- run_mattersim.py - Python calculator wrapper
+
+### Build:
 - Makefile - Updated compilation
-- Multiple example configurations
 
-## Citation
-
-Original IM2ODE paper:
-- Zhang YY et al. Comp. Mater. Sci. 98, 51-55 (2015)
+### Examples:
+- examples/TiO2_12atoms/
+- examples/Au20_cluster/
+- examples/FeSe_2D/
 
 ## License
-
 LGPL
