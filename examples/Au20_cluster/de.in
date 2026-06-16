@@ -1,0 +1,18 @@
+# DE algorithm parameters for Au20 cluster
+# --------------------------------------------------
+# Population size
+50
+# Number of generations
+100
+# Crossover probability
+0.7
+# Mutation probability
+0.15
+# Selection pressure
+2.0
+# Energy calculator: 1=LAMMPS (Gupta potential)
+1
+# Interval for output
+10
+# Random seed
+0
