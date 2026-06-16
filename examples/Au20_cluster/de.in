@@ -10,8 +10,8 @@
 0.15
 # Selection pressure
 2.0
-# Energy calculator: 1=LAMMPS (Gupta potential)
-1
+# Energy calculator: 2=MatterSim ML force field
+2
 # Interval for output
 10
 # Random seed
