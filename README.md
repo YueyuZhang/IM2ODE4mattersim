@@ -24,7 +24,7 @@ conda activate simulation
 pip install mattersim
 `
 
-### 2. Compile IM2ODE
+### 2. Compile IM2ODE4mattersim
 
 `ash
 git clone https://github.com/YueyuZhang/IM2ODE4mattersim.git
@@ -46,22 +46,23 @@ cp ../../de.x .
 | Example | System | Atoms | Type |
 |---------|--------|-------|------|
 | TiO2_12atoms | Bulk TiO2 | 12 | 3D periodic |
-| Au20_cluster | Gold cluster | 20 | 0D cluster |
+| Au20_cluster | Gold nanocluster | 20 | 0D cluster |
 | FeSe_2D | FeSe monolayer | 8 | 2D material |
 
 ## Files Modified/Added
 
-### MatterSim integration:
-- run_mattersim.F90 - Fortran interface
+### Core MatterSim integration:
+- run_mattersim.F90 - Fortran interface module
 - run_mattersim.py - Python calculator wrapper
 
-### Build:
+### Build system:
 - Makefile - Updated compilation
 
 ### Examples:
-- examples/TiO2_12atoms/
-- examples/Au20_cluster/
-- examples/FeSe_2D/
+- examples/TiO2_12atoms/ - Bulk oxide search
+- examples/Au20_cluster/ - Gold cluster optimization
+- examples/FeSe_2D/ - 2D monolayer search
 
 ## License
+
 LGPL
