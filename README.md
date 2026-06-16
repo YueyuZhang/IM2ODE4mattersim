@@ -11,7 +11,7 @@ force field for fast and accurate materials simulations.
 
 - GNU make
 - Fortran compiler
-- Python 3.8+
+- Python 3.8 or newer
 - MatterSim (ML force field)
 - ASE (Atomic Simulation Environment)
 
@@ -37,17 +37,16 @@ All examples use MatterSim ML force field:
 
 | Example | System | Atoms | Type |
 |---------|--------|-------|------|
-| **TiO2_12atoms** | Bulk TiO2 | 12 | 3D periodic |
-| **Au20_cluster** | Gold nanocluster | 20 | 0D cluster |
-| **FeSe_2D** | FeSe monolayer | 8 | 2D material |
+| TiO2_12atoms | Bulk TiO2 | 12 | 3D periodic |
+| Au20_cluster | Gold nanocluster | 20 | 0D cluster |
+| FeSe_2D | FeSe monolayer | 8 | 2D material |
 
 ## Integration Details
 
 The MatterSim integration works as follows:
 
 1. Fortran code writes structure to POSCAR format
-2. 
-un_mattersim.py reads structure and runs MatterSim
+2. run_mattersim.py reads structure and runs MatterSim
 3. Energy and forces are written back
 4. Fortran code continues optimization
 
