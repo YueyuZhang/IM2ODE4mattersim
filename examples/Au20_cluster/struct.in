@@ -1,0 +1,18 @@
+# Structure definition for Au20 cluster
+# --------------------------------------------------
+# Number of atom types
+1
+# Atom types: Au
+Au
+# Number of atoms
+20
+# Minimal distances (bohr)
+4.0
+# Lattice type: 5=cluster (cubic box)
+5
+# Box size range (bohr^3)
+6000 8000
+# Fix atom type: 0=not fix
+0
+# Fix lattice: 1=fix (fixed box for cluster)
+1
