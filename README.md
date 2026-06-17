@@ -42,6 +42,7 @@ cp ../../de.x .
 | TiO2_12atoms | Bulk TiO2 | 12 | 3D periodic |
 | Au20_cluster | Gold nanocluster | 20 | 0D cluster |
 | FeSe_2D | FeSe monolayer | 8 | 2D material |
+| H2_adsorption_CuZn | H on CuZn surface | 40 | Surface catalysis |
 
 ## Files Modified/Added
 
@@ -56,6 +57,7 @@ cp ../../de.x .
 - examples/TiO2_12atoms/ - Bulk oxide search
 - examples/Au20_cluster/ - Gold cluster optimization
 - examples/FeSe_2D/ - 2D monolayer search
+- examples/H2_adsorption_CuZn/ - Surface catalysis
 
 ## License
 
