@@ -1,0 +1,37 @@
+# DE input for Ag4 cluster on C-N surface
+SystemName=pl-N-Ag4
+NumberOfSpecies=3
+NumberOfElements=70 1 4
+NameOfElements=C N Ag
+AtomicNumberOfElements=6 7 47
+Volumn=3795
+DistanceOfAtom=
+DIS1=1.2 1.2 1.8
+DIS2=1.2 1.2 1.8
+DIS3=1.8 1.8 1.8
+Population=10
+MaxStep=10
+De_ratio=0.6
+SelectiveDynamics=T
+
+# MatterSim ML force field
+MatterSim=T
+
+# Cluster on surface settings
+cluster=T
+init_radius=2
+cluster_ctr_x=0.5
+cluster_ctr_y=0.5
+cluster_ctr_z=0.3
+cluster_substrate=T
+fix_atom=T
+SubstrateElements=70 1 0
+
+# Fixed lattice (hexagonal)
+fix_lat=T
+fix_a=14.8
+fix_b=14.8
+fix_c=20.0
+fix_alpha=120
+fix_beta=90
+fix_gama=90
