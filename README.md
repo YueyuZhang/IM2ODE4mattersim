@@ -43,6 +43,7 @@ cp ../../de.x .
 | Au20_cluster | Gold nanocluster | 20 | 0D cluster |
 | FeSe_2D | FeSe monolayer | 8 | 2D material |
 | H2_adsorption_CuZn | H on CuZn surface | 40 | Surface catalysis |
+| Ag4_cluster_surface | Ag4 on C-N surface | 75 | Cluster-surface |
 
 ## Files Modified/Added
 
@@ -53,11 +54,12 @@ cp ../../de.x .
 ### Build system:
 - Makefile - Updated compilation
 
-### Examples:
+### Examples (5 total):
 - examples/TiO2_12atoms/ - Bulk oxide search
 - examples/Au20_cluster/ - Gold cluster optimization
 - examples/FeSe_2D/ - 2D monolayer search
-- examples/H2_adsorption_CuZn/ - Surface catalysis
+- examples/H2_adsorption_CuZn/ - Surface catalysis (atom)
+- examples/Ag4_cluster_surface/ - Cluster-surface interaction
 
 ## License
 
