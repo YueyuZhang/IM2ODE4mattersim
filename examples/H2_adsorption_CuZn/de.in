@@ -1,0 +1,22 @@
+# input file for DE - H adsorption on CuZn with MatterSim
+SystemName=CuZnH
+NumberOfSpecies=3
+NumberOfElements=36 3 1
+NameOfElements=Cu Zn H
+Volumn=1200
+DistanceOfAtom=
+DIS1=1.2 1.2 1.2
+DIS2=1.2 1.2 1.2
+DIS3=1.2 1.2 1.2
+Population=10
+MaxStep=5
+De_ratio=0.6
+SelectiveDynamics=T
+Symmetry=T
+Pickup=F
+
+# Energy Calculator: 2 = MatterSim ML force field
+MatterSim=T
+
+# Fixed substrate atoms (only H adsorbate moves)
+FixSubstrate=T
