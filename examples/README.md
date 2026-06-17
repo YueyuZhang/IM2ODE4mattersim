@@ -22,6 +22,12 @@ Global optimization of 20-atom gold nanocluster
 - Composition: 4 Fe + 4 Se = 8 atoms
 - Target: FeSe monolayer phases
 
+### 4. H2_adsorption_CuZn (NEW!)
+H adsorption on CuZn brass surface (surface catalysis)
+- Calculator: MatterSim ML force field
+- Composition: 36 Cu + 3 Zn + 1 H = 40 atoms
+- Target: Stable adsorption sites on alloy surface
+
 ## Common Setup
 
 All examples use:
