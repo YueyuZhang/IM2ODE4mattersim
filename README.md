@@ -4,6 +4,14 @@
 
 ---
 
+<div align="center">
+
+[![Website](https://img.shields.io/badge/Website-IM2ODE-blue?style=flat-square&logo=google-chrome)](https://yueyuzhang.github.io/im2ode.github.io/)
+[![GitHub stars](https://img.shields.io/github/stars/YueyuZhang/IM2ODE4mattersim?style=flat-square&logo=github)](https://github.com/YueyuZhang/IM2ODE4mattersim/stargazers)
+[![License](https://img.shields.io/badge/License-LGPL-green?style=flat-square)]()
+
+</div>
+
 ## Overview
 
 This is a modified version of IM2ODE that integrates MatterSim, a graph neural network
@@ -18,6 +26,7 @@ machine learning potentials.
 - Support for bulk, cluster, 2D, and surface systems
 - Selective dynamics support
 - POSCAR format input/output
+- 5 built-in example systems
 
 ## Requirements
 
@@ -66,15 +75,18 @@ cp ../../de.x .
 ### Build System:
 - Makefile - Updated compilation
 
+## Official Website
+
+Visit the official IM2ODE website for detailed documentation, tutorials, and more information:
+
+**https://yueyuzhang.github.io/im2ode.github.io/**
+
 ## Citation
 
 Original IM2ODE paper:
 - Zhang YY, Gao WG, Chen SY, Xiang HJ, Gong XG.
   "Inverse design of materials by multi-objective differential evolution"
   Comput. Mater. Sci. 98, 51-55 (2015)
-
-## Original IM2ODE Website
-- Official Website: https://yueyuzhang.github.io/im2ode.github.io/
 
 ## License
 
@@ -102,6 +114,7 @@ LGPL
 - 支持体相、团簇、二维材料、表面体系
 - 选择性动力学支持
 - POSCAR 格式输入/输出
+- 内置 5 个示例系统
 
 ## 环境要求
 
@@ -150,15 +163,18 @@ cp ../../de.x .
 ### 编译系统：
 - Makefile - 更新的编译配置
 
+## 官方网站
+
+访问 IM2ODE 官方网站获取详细文档、教程和更多信息：
+
+**https://yueyuzhang.github.io/im2ode.github.io/**
+
 ## 引用
 
 原始 IM2ODE 论文：
 - Zhang YY, Gao WG, Chen SY, Xiang HJ, Gong XG.
   "Inverse design of materials by multi-objective differential evolution"
   Comput. Mater. Sci. 98, 51-55 (2015)
-
-## 原始 IM2ODE 网站
-- 官方网站：https://yueyuzhang.github.io/im2ode.github.io/
 
 ## 许可证
 
